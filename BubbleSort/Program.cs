@@ -7,3 +7,7 @@ void BubbleSort<T>(T[] arr) where T : IComparable
             if (arr[j].CompareTo(arr[j + 1]) > 0)
                 (arr[j], arr[j + 1]) = (arr[j + 1], arr[j]); // tuple deconstruction
 }
+
+int[] arr = { 1, 9, 2, 8 };
+BubbleSort(arr);
+Console.WriteLine(string.Join(',', arr));
